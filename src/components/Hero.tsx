@@ -1,6 +1,7 @@
 import React from 'react';
 import { ShieldCheck, Sparkles, ArrowRight, MessageCircle } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/pricingData.ts';
+import { ASSETS } from '../assets/images.ts';
 
 export const Hero: React.FC = () => {
   const scrollToPresupuesto = (e: React.MouseEvent) => {
@@ -12,11 +13,11 @@ export const Hero: React.FC = () => {
   };
 
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center pt-28 pb-16 overflow-hidden">
+    <section className="relative min-h-[90vh] flex items-center justify-center pt-28 pb-16 overflow-hidden w-full">
       {/* Background Image with dark vignette and scrim */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/src/assets/images/hero_car_detailing_studio_1793062253980.jpg"
+          src={ASSETS.hero}
           alt="Punto Shine Detailing estética vehicular en La Plata"
           className="w-full h-full object-cover object-center filter brightness-[0.38] contrast-115"
           referrerPolicy="no-referrer"

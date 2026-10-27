@@ -1,6 +1,7 @@
 import React from 'react';
 import { Phone, Instagram, MapPin, ArrowUp, ExternalLink } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/pricingData.ts';
+import { ASSETS } from '../assets/images.ts';
 
 export const Footer: React.FC = () => {
   const scrollToTop = () => {
@@ -15,7 +16,7 @@ export const Footer: React.FC = () => {
           <div className="md:col-span-2 space-y-4">
             <div className="flex items-center gap-3">
               <img
-                src="/src/assets/images/logo_punto_shine.png"
+                src={ASSETS.logo}
                 alt="Punto Shine Detailing Logotipo Oficial"
                 className="h-9 sm:h-11 w-auto object-contain logo-glow-subtle"
                 referrerPolicy="no-referrer"

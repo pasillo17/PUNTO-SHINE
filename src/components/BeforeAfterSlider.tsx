@@ -1,5 +1,6 @@
 import React, { useState, useRef, useCallback } from 'react';
 import { Sparkles, SlidersHorizontal, Check } from 'lucide-react';
+import { ASSETS } from '../assets/images.ts';
 
 export const BeforeAfterSlider: React.FC = () => {
   const [sliderPosition, setSliderPosition] = useState<number>(50);
@@ -57,7 +58,7 @@ export const BeforeAfterSlider: React.FC = () => {
             {/* AFTER: Flawless mirror ceramic finish (Full layer) */}
             <div className="absolute inset-0">
               <img
-                src="/src/assets/images/paint_correction_swirls_1793062255355.jpg"
+                src={ASSETS.paintCorrection}
                 alt="Pintura corregida y sellada cerámicamente en Punto Shine Detailing"
                 className="w-full h-full object-cover filter brightness-110 contrast-125"
                 referrerPolicy="no-referrer"
@@ -82,7 +83,7 @@ export const BeforeAfterSlider: React.FC = () => {
                 }}
               >
                 <img
-                  src="/src/assets/images/paint_correction_swirls_1793062255355.jpg"
+                  src={ASSETS.paintCorrection}
                   alt="Pintura con rayas de lavado y desgaste antes del detailing"
                   className="w-full h-full object-cover filter brightness-[0.75] contrast-[0.85] sepia-[0.35] blur-[0.4px]"
                   referrerPolicy="no-referrer"

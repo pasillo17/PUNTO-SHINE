@@ -1,5 +1,6 @@
 import React from 'react';
 import { Shield, CheckCircle, ArrowUpRight } from 'lucide-react';
+import { ASSETS } from '../assets/images.ts';
 
 interface ServiceItem {
   id: string;
@@ -16,7 +17,7 @@ const SERVICES: ServiceItem[] = [
     id: 'ceramic',
     title: 'Tratamientos Cerámicos 9H',
     category: 'Protección Extrema',
-    image: '/src/assets/images/detailing_ceramic_coating_1793062254602.jpg',
+    image: ASSETS.ceramic,
     description:
       'Coating de dióxido de silicio (SiO2) que genera una capa de cristalización sobre la laca. Brinda resistencia a rayas ligeras, protección química frente a excrementos de pájaros y una hidrofobia extrema que repele el agua.',
     highlights: [
@@ -31,7 +32,7 @@ const SERVICES: ServiceItem[] = [
     id: 'interior',
     title: 'Detallado Interior Profundo',
     category: 'Restauración de Habitáculo',
-    image: '/src/assets/images/interior_detailing_luxury_1793062254515.jpg',
+    image: ASSETS.interior,
     description:
       'Limpieza integral a vapor seco e inyección-extracción profunda de tapizados de tela y cuero. Desinfección y descontaminación de ductos de climatización, alfombras y paneles con acondicionador mate original.',
     highlights: [
@@ -46,7 +47,7 @@ const SERVICES: ServiceItem[] = [
     id: 'engine',
     title: 'Detallado de Vano Motor',
     category: 'Cuidado Mecánico y Estético',
-    image: '/src/assets/images/engine_bay_detailing_1793062254590.jpg',
+    image: ASSETS.engine,
     description:
       'Limpieza técnica y desengrase seguro de vano motor mediante vapor y productos dieléctricos que preservan los componentes electrónicos y cableados. Acabado satinado anti-estático que repele la suciedad.',
     highlights: [
@@ -61,7 +62,7 @@ const SERVICES: ServiceItem[] = [
     id: 'correction',
     title: 'Corrección de Pintura Multi-Paso',
     category: 'Perfección de Laca',
-    image: '/src/assets/images/paint_correction_swirls_1793062255355.jpg',
+    image: ASSETS.paintCorrection,
     description:
       'Proceso minucioso de pulido técnico con pulidoras roto-orbitales Rupes y compuestos Menzerna/Koch Chemie. Eliminamos micro-rayas (swirls), marcas de agua ácida, hologramas y desgaste general de la pintura.',
     highlights: [

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, PhoneCall } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/pricingData.ts';
+import { ASSETS } from '../assets/images.ts';
 
 export const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -41,7 +42,7 @@ export const Navbar: React.FC = () => {
             <div className="relative">
               <div className="absolute -inset-1 bg-blue-500/20 rounded-full blur-md opacity-75 group-hover:opacity-100 transition duration-300" />
               <img
-                src="/src/assets/images/logo_punto_shine.png"
+                src={ASSETS.logo}
                 alt="Punto Shine Detailing"
                 className="relative h-7 sm:h-9 w-auto object-contain logo-glow-subtle transition-transform duration-300 group-hover:scale-105"
                 referrerPolicy="no-referrer"
