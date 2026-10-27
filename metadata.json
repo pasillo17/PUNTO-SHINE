@@ -1,0 +1,6 @@
+{
+  "name": "Punto Shine - Detailing La Plata",
+  "description": "Centro de estética vehicular en La Plata. Cotizador de presupuesto online al instante para tratamientos cerámicos, protección acrílica, pulido y detallado interior en Punto Shine.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
